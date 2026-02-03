@@ -18,8 +18,8 @@ const FullProjects = () => {
     // UI/UX Design
     {
       id: 1,
-      title: 'Redesigning a B2B Procurement Platform',
-      desc: 'Enhancing the user experience for enterprise buyers by streamlining the ordering process.',
+      title: 'Mobile Datatable Optimization',
+      desc: 'Transforming a complex desktop datatable into an intuitive mobile-first experience.',
       category: 'UI/UX Design',
       image: new URL('../assets/projects/uix-design/companies.png', import.meta.url).href,
       buttons: [
@@ -41,7 +41,7 @@ const FullProjects = () => {
     {
       id: 3,
       title: 'Costku - Expense Flow',
-      desc: 'A payment/expense flow crafted for clarity and speed.',
+      desc: 'A payment/expense flow crafted.',
       category: 'UI/UX Design',
       image: new URL('../assets/projects/uix-design/costku.png', import.meta.url).href,
       buttons: [
@@ -65,7 +65,7 @@ const FullProjects = () => {
     {
       id: 5,
       title: 'Hsertif Certificate Generator',
-      desc: 'A lightweight service to generate printable certificates.',
+      desc: 'A simple tool to create certificates instantly.',
       category: 'Web Development',
       image: new URL('../assets/projects/web-developer/hsertif.jpeg', import.meta.url).href,
       buttons: [
@@ -87,7 +87,7 @@ const FullProjects = () => {
     {
       id: 7,
       title: 'Strawberry Detection Model',
-      desc: 'Computer vision pipeline to detect defects on strawberries.',
+      desc: 'A computer vision pipeline for detecting strawberry ripeness.',
       category: 'AI',
       image: new URL('../assets/projects/AI/detection-strawberry.jpeg', import.meta.url).href,
       buttons: [
@@ -97,7 +97,7 @@ const FullProjects = () => {
     {
       id: 8,
       title: 'Platform Detection PoC',
-      desc: 'An object-detection POC for industrial platforms.',
+      desc: 'A lightweight proof of concept for detecting vehicle number plates',
       category: 'AI',
       image: new URL('../assets/projects/AI/detection-plat.jpeg', import.meta.url).href,
       buttons: [
@@ -116,8 +116,8 @@ const FullProjects = () => {
     },
     {
       id: 10,
-      title: 'Waste Classification Model',
-      desc: 'Image classifier to separate trash categories for recycling.',
+      title: 'Organic and Inorganic Waste Detector',
+      desc: 'to detect organic and inorganic waste in the surrounding environment.',
       category: 'AI',
       image: new URL('../assets/projects/AI/trash.jpeg', import.meta.url).href,
       buttons: [
@@ -128,23 +128,27 @@ const FullProjects = () => {
     // Analytics
     {
       id: 11,
-      title: 'Sales Funnel Analytics',
-      desc: 'Tracking and visualizing conversion funnels for product teams.',
+      title: 'SEO Analysis',
+      desc: 'Comprehensive analysis of website SEO performance, keywords, and optimization opportunities.',
       category: 'Analytics',
-      image: '',
-      buttons: [
-        { label: 'View', url: '#' }
-      ]
+      image: new URL('../assets/projects/analytics/SEO.png', import.meta.url).href,
+      buttons: []
     },
     {
       id: 12,
-      title: 'Real-time Metrics Dashboard',
-      desc: 'Streaming metrics with alerting and cohort analysis.',
+      title: 'Google Analytics Dashboard',
+      desc: 'Real-time analytics dashboard tracking user behavior and traffic sources.',
       category: 'Analytics',
-      image: '',
-      buttons: [
-        { label: 'View', url: '#' }
-      ]
+      image: new URL('../assets/projects/analytics/Google-Analytics.png', import.meta.url).href,
+      buttons: []
+    },
+    {
+      id: 13,
+      title: 'Meta Business Analytics',
+      desc: 'Facebook/Instagram ad performance tracking and audience insights.',
+      category: 'Analytics',
+      image: new URL('../assets/projects/analytics/Meta-Business.png', import.meta.url).href,
+      buttons: []
     }
   ];
 

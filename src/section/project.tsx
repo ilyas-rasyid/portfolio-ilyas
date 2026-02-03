@@ -10,44 +10,42 @@ const Projects = () => {
   const projectData = [
     {
       id: 1,
-      title: 'Redesigning a B2B Procurement Platform',
-      desc: 'Enhancing the user experience for enterprise buyers by streamlining the ordering process.',
+      title: 'Mobile Datatable Optimization',
+      desc: 'Transforming a complex desktop datatable into an intuitive mobile-first experience.',
       category: 'UI/UX Design',
       image: new URL('../assets/projects/uix-design/companies.png', import.meta.url).href,
       buttons: [
-        { label: 'View Project', url: '#' },
-        { label: 'View Interactive', url: '#' }
+        { label: 'View Project', url: 'https://www.figma.com/design/vHEWpm7XwpfDsgJzB2C1vM/PT-Ambisius-Lab_Muhammad-Ilyas-Rasyid?node-id=1-2&p=f&t=k1ln6mSIrVWzsQM3-0' },
+        { label: 'View Interactive', url: 'https://www.figma.com/proto/vHEWpm7XwpfDsgJzB2C1vM/PT-Ambisius-Lab_Muhammad-Ilyas-Rasyid?node-id=1-2&p=f&t=k1ln6mSIrVWzsQM3-0&scaling=scale-down&content-scaling=fixed&page-id=1%3A2&starting-point-node-id=1%3A7' }
       ]
     },
     {
       id: 5,
       title: 'Hsertif Certificate Generator',
-      desc: 'A lightweight service to generate printable certificates.',
+      desc: 'A simple tool to create certificates instantly.',
       category: 'Web Development',
       image: new URL('../assets/projects/web-developer/hsertif.jpeg', import.meta.url).href,
       buttons: [
-        { label: 'View', url: '#' }
+        { label: 'View', url: 'https://hsertif.vercel.app/' }
       ]
     },
     {
       id: 7,
       title: 'Strawberry Detection Model',
-      desc: 'Computer vision pipeline to detect defects on strawberries.',
+      desc: 'A computer vision pipeline for detecting strawberry ripeness.',
       category: 'AI',
       image: new URL('../assets/projects/AI/detection-strawberry.jpeg', import.meta.url).href,
       buttons: [
-        { label: 'View', url: '#' }
+        { label: 'View', url: 'https://huggingface.co/spaces/rasyid-ilyas/stroberi-web' }
       ]
     },
     {
-      id: 11,
-      title: 'Sales Funnel Analytics',
-      desc: 'Tracking and visualizing conversion funnels for product teams.',
+      id: 10,
+      title: 'SEO Analysis',
+      desc: 'Comprehensive analysis of website SEO performance, keywords, and optimization opportunities.',
       category: 'Analytics',
-      image: '',
-      buttons: [
-        { label: 'View', url: '#' }
-      ]
+      image: new URL('../assets/projects/analytics/SEO.png', import.meta.url).href,
+      buttons: []
     }
   ];
 

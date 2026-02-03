@@ -2,7 +2,7 @@ const Skills = () => {
   const expertise = [
     {
       title: "UI/UX Design",
-      desc: "Kemampuan Teknis (Technical Skills)",
+      desc: "Technical Skills",
       skills: [
         "Figma: High-Fidelity Design, Prototyping, Wireframing, Visual Hierarchy",
         "UX Research & Logic: User Flow, Information Architecture, Flowchart SOP, Business Model Canvas (BMC)",
@@ -18,7 +18,7 @@ const Skills = () => {
     },
     {
       title: "Web Development",
-      desc: "Kemampuan Teknis (Technical Skills)",
+      desc: "Technical Skills",
       skills: [
         "Frontend: HTML, CSS, JavaScript, React, Next.js, Tailwind CSS",
         "Backend: Laravel, PHP, SQL",
@@ -34,7 +34,7 @@ const Skills = () => {
     },
     {
       title: "AI & Computer Vision",
-      desc: "Kemampuan Teknis (Technical Skills)",
+      desc: "Technical Skills",
       skills: [
         "Python: NumPy, OpenCV, TensorFlow, PyTorch",
         "Image Processing & Object Detection",
@@ -49,14 +49,16 @@ const Skills = () => {
       )
     },
     {
-      title: "Analytics",
-      desc: "Kemampuan Analitik (Analytical Skills)",
+      title: "Analytics & Editing",
+      desc: "Technical Skills",
       skills: [
-        "Data Analysis & Visualization",
-        "Google Analytics & Tracking Setup",
-        "Conversion Funnel Optimization",
-        "Performance Metrics & Reporting",
-        "User Behavior & Data Insights"
+        "Social Media Management: Instagram, TikTok, YouTube",
+        "Content Planning & Calendars: posting strategy, scheduling, trend monitoring",
+        "Copywriting & Trend Research: creative copy, trend research, audience engagement",
+        "Analytics & Tools: Meta Business Suite, Social Blade, TikTok Ads, Google Analytics",
+        "SEO (On-page): following Google SEO best practices",
+        "Content Performance Analysis & AI-assisted Sentiment Analysis",
+        "Editing & Design Software: Adobe Premiere, Canva, Photoshop, Illustrator, Figma"
       ],
       icon: (
         <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">

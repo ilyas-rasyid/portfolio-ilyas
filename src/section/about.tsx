@@ -62,9 +62,9 @@ const About = () => {
               Designing experiences that convert,scale, and last.
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed">
-              I'm a UI/UX Designer with a strong technical background in web development and SEO. 
-              I focus on building intuitive, scalable interfaces by aligning user needs with 
-              business goals and technical feasibility.
+              I'm a product developer focused on digital products. I design, build, and analyze
+              digital experiences — combining product thinking, visual design, and data analytics
+              to create user-centered solutions that drive growth.
             </p>
           </div>
         </div>
