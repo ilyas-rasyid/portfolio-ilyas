@@ -1,0 +1,150 @@
+/* src/index.css */
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #223654;
+  --radius-button: 10px;
+}
+
+/* Base Styles */
+html {
+  @apply overflow-x-hidden scroll-smooth;
+}
+
+body {
+  @apply bg-white text-gray-900 antialiased overflow-x-hidden;
+}
+
+/* ========== SCROLL REVEAL ANIMATIONS ========== */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-reveal.delay-100 { transition-delay: 100ms; }
+.scroll-reveal.delay-200 { transition-delay: 200ms; }
+.scroll-reveal.delay-300 { transition-delay: 300ms; }
+.scroll-reveal.delay-400 { transition-delay: 400ms; }
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 600ms ease-out forwards;
+  opacity: 0;
+}
+
+.animate-fade-in.delay-100 { animation-delay: 100ms; }
+.animate-fade-in.delay-200 { animation-delay: 200ms; }
+.animate-fade-in.delay-300 { animation-delay: 300ms; }
+
+/* Slide Up Animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 600ms ease-out forwards;
+  opacity: 0;
+}
+
+/* Component Styles */
+@layer components {
+  /* Base Button Style */
+  .btn-base,
+  .btn-filled,
+  .btn-outlined {
+    @apply px-6 py-[10px] rounded-[10px] font-medium transition-all duration-300 active:scale-95;
+  }
+
+  .btn-filled {
+    @apply bg-primary text-white hover:shadow-lg hover:-translate-y-0.5 opacity-90;
+  }
+
+  .btn-outlined {
+    @apply border-2 border-primary bg-white text-primary hover:bg-primary hover:text-white hover:-translate-y-0.5;
+  }
+
+  /* Social Icons */
+  .icon-sosmed {
+    @apply flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 text-gray-700 transition-all duration-300 hover:scale-110 hover:bg-primary hover:text-white;
+  }
+
+  /* About Card */
+  .about-card {
+    @apply flex items-start gap-4 p-6 bg-white rounded-2xl border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1;
+  }
+
+  .icon-wrapper {
+    @apply flex items-center justify-center w-12 h-12 rounded-xl bg-blue-50 text-blue-600 shrink-0;
+  }
+
+  /* Skills Card */
+  .skills-card {
+    @apply bg-white rounded-[24px] p-6 border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-2 flex flex-col h-full;
+  }
+  
+  .skills-list-item {
+    @apply flex items-start gap-2 text-gray-600 text-sm leading-relaxed;
+  }
+
+  /* Project Card */
+  .project-card {
+    @apply bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 flex flex-col h-full;
+  }
+
+  .project-image-container {
+    @apply relative w-full h-48 md:h-56 bg-gray-100 overflow-hidden;
+  }
+
+  .project-image {
+    @apply w-full h-full object-cover transition-transform duration-700 hover:scale-110;
+  }
+
+  /* Contact Form */
+  .contact-input {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-gray-700 bg-white;
+  }
+
+  .contact-label {
+    @apply block text-sm font-semibold text-gray-700 mb-2;
+  }
+
+  .contact-info-item {
+    @apply flex items-center gap-4 text-gray-600 hover:text-primary transition-colors;
+  }
+
+  /* Footer */
+  .footer-link {
+    @apply text-gray-500 hover:text-primary transition-colors text-sm font-medium;
+  }
+
+  /* Filter Button */
+  .filter-btn {
+    @apply px-4 py-2 rounded-full border border-gray-200 text-sm font-medium transition-all hover:bg-gray-100;
+  }
+
+  .filter-btn-active {
+    @apply bg-primary text-white border-primary;
+  }
+}
