@@ -165,12 +165,12 @@ const Navbar = () => {
           ${isOpen ? 'translate-x-0' : 'translate-x-full'}
         `}
       >
-        {/* Mobile Menu Header */}
+        {/* Mobile Menu Header
         <div className="pt-4 pb-6 border-b border-gray-200">
           <div className="text-xl font-bold text-primary">Ilyas Rasyid</div>
           <div className="text-sm text-gray-500 mt-1">Portfolio</div>
-        </div>
-
+        </div> */}
+        <div className='mt-20'></div>
         {/* Mobile Menu Items */}
         <div className="flex flex-col gap-2 mt-6">
           {menus.map((menu) => (

@@ -179,7 +179,7 @@ const FullProjects = () => {
         <div ref={titleRef} className="scroll-reveal text-center mb-8 sm:mb-12 space-y-2 sm:space-y-4 animate-fade-in">
           <button
             onClick={() => navigate('/')}
-            className="inline-block mb-2 sm:mb-4 text-primary hover:text-blue-800 transition text-sm sm:text-base font-medium"
+            className="inline-block mt-12 md:mt-0 mb-2 sm:mb-4 text-primary hover:text-blue-800 transition text-sm sm:text-base font-medium"
           >
             ← Back to Home
           </button>

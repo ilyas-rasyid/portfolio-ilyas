@@ -13,7 +13,7 @@ import FullProjects from './section/full-projects' // Import halaman full projec
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Router>
+    <Router basename="/portfolio-ilyas">
       <Navbar />
       <Routes>
         {/* Halaman Utama */}
